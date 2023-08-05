@@ -509,7 +509,7 @@ textarea {
 
 .social {}
 
-.footer-social-subtitle {
+.footer-subtitle {
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
@@ -918,5 +918,64 @@ textarea {
 .modal-check:checked+.modal-check-text span {
   background-color: var(--iris);
   border: none;
+  fill: var(--white);
+}
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+
+  font-size: 12px;
+  line-height: 2px;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  border-radius: 4px;
+  border: 1px solid var(--white, #FFF);
+  background-color: transparent;
+  display: block;
+  margin-right: 24px;
+  padding: 8px 16px;
+}
+
+.footer-input::placeholder {
+  color: var(--white);
+}
+
+.footer-subscribe-btn {
+  background-color: var(--iris);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: var(--ocean)
+}
+
+.footer-icon-submit {
   fill: var(--white);
 }
